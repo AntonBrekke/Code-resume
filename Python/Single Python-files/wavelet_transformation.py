@@ -7,6 +7,11 @@ import time
 Anton Brekke / antonabr@uio.no
 Making a class so one can make several objects
 with same properties. 
+This code makes Wavelet-transformation using 
+Morlet-wavelets and the convolution theorem of 
+Foruier-transforms. Fourier-transforms give frequency
+of signals, but not where in time they occur. This 
+is the purpose of the wavelet-transform. 
 """
 
 class Freq_Analysis:
