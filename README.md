@@ -1,4 +1,4 @@
-# Resume
+# Code resume
 
  All C++-files where made in collaberation with a group during the FYS3150-course taken at UiO. 
 
