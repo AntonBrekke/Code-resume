@@ -1,7 +1,7 @@
 /*
 This file contains the definition of the class Matrix
 */
-
+#define ARMA_DONT_USE_STD_MUTEX 
 #include <armadillo>
 
 class Matrix

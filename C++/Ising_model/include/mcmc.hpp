@@ -5,6 +5,7 @@ Header file for the Markov Chain Monte Carlo (MCMC) method
 #ifndef __MCMC_hpp__
 #define __MCMC_hpp__
 
+#define ARMA_DONT_USE_STD_MUTEX 
 #include <armadillo>
 
 // Perform one MCMC cycle, ie. N attempted spin flips
