@@ -13,7 +13,7 @@ a = [0, 0, 0]
 b = [np.pi, np.pi, np.pi]  
 # Number of points in arrays
 ni = int(1e6)        
-N = 3*[ni]      
+N = [ni, ni, ni]      
 
 # Collection of arrays for each variable 
 x = []
