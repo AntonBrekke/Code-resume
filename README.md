@@ -9,6 +9,10 @@
  - Mads Saua Balto
  - Alireza Asghari
 
+### Ising_model
+
+### Schrodinger_equation
+
 ## Python
 
  All Python-files is made by me, Anton Andreas Brekke. 
