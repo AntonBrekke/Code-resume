@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 
-func = input('Input a function: ')
+func = input('Input a function in Python syntax (numpy with np. is allowed): ')
 n = int(input('Input number of sum: '))
 # Bare formatterings-greier
 funclabel = func.replace('**', '^').replace('np.', '').replace('*', '')
@@ -55,5 +55,5 @@ def update(frame):
     text = ax.text(b, pmin, f'n={N[frame]}', fontsize=16, weight='bold', ha='right')    # ha gir referansepunkt til teksten
     return line, line2, text,
 
-ani = FuncAnimation(fig, update, frames=len(N), interval=1000, blit=True, repeat=True, repeat_delay=5)
+ani = FuncAnimation(fig, update, frames=len(N), interval=50, blit=True, repeat=True, repeat_delay=5)
 plt.show()
