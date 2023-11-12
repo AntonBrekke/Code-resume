@@ -6,10 +6,10 @@ For the C++-files, more detailed README-files is contained in each project.
  All C++-files where made in collaberation with a group during the FYS3150-course taken at UiO. 
 
  Authors of the C++-files include: 
- - Anton Andreas Brekke
- - Johan Luciano Jahre Carlsen 
- - Mads Saua Balto
- - Alireza Asghari
+ - Anton Andreas Brekke, Git: AntonBrekke
+ - Johan Luciano Jahre Carlsen, Git: JohanCarlsen
+ - Mads Saua Balto, Git: Madssb
+ - Alireza Asghari, Git: mahanasg
 
 ### Ising_model
 In this project, we solved the Ising-model using Markov-chain Monte-Carlo (MCMC). 
