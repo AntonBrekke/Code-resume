@@ -7,25 +7,26 @@ import cmasher as cmr
 """
 Simple code for solving Ising model using Monte Carlo.
 Not optimized in terms of efficiency, and focus more on 
-readability. Not suited for all the purposes of FYS3150. 
+readability. Not suited for all the purposes of FYS3150,
+but could be parallelized. 
+
+Numba runs the code approx. 12 times faster. 
 """
 
 cmap = cmr.get_sub_cmap('Greys', 0, 1)
 plt.style.use('dark_background')
 
-N = 1000  
+N = 1000        # N x N lattice
 T = 1    # Working with k_B = 1, thus T [J/k_B]
 J = 1       # Coupling constant
 M = 100*N**2        # Number of iterations 
 
 s_init = np.random.choice([-1, 1], size=(N,N))  # Randomize spin lattice, value -1: down, 1: up
-# s_init = 1*np.ones((N,N))
-
 
 @njit       # Using numba to speed up function 
 def ising_model(s_init):
     s = s_init.copy()
-    for iter in range(1, M):
+    for iter in range(0, M):
         # Choose random lattice point (Monte Carlo)
         i = np.random.randint(0, N)
         j = np.random.randint(0, N)
@@ -60,8 +61,6 @@ ax2 = fig.add_subplot(121)
 spins = ax.imshow(s, cmap=cmap)
 spins_init = ax2.imshow(s_init, cmap=cmap)
 
-# cbar = fig.colorbar(spins, ax=ax, location='right', ticks=[-1, 0, 1])
-# cbar.set_ticklabels(['-1', '0', '1'])
 ax.invert_yaxis()
 ax2.invert_yaxis()
 
