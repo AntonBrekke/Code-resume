@@ -1,4 +1,6 @@
 # Code resume
+This README contains descriptions and information of the files in this repostitory. 
+For the C++-files, more detailed README-files is contained in each project.
 
 ## C++
  All C++-files where made in collaberation with a group during the FYS3150-course taken at UiO. 
@@ -20,8 +22,6 @@ In this project, we solved the Schrodinger equation as a PDE in 1+2 dimensions. 
 initiate a potential that simulates slits, and simulate double and triple slit experiments. 
 The slits were modelled as a large potential in the Schrodinger-equation. 
 
-More detailed README-files is contained in each project.
-
 ## Python
 
 ### Jupyter
@@ -41,8 +41,8 @@ specific regions.
 ### Single Python-files
 
 #### MCI_multivar.py, MCI_multivar_parallel.py
-Simple algoritms for calculating integrals using Monte-Carlo methods. Simple cases without importance 
-sampling. Codes work for an arbitrary amount of variables. MCI_multivar_parallel.py runs multiple simulations 
+Simple algorithms for calculating integrals using Monte-Carlo methods. Simple cases without importance 
+sampling (could be added by doing Metropolis-Hastings). Codes work for an arbitrary amount of variables. MCI_multivar_parallel.py runs multiple simulations 
 of same integral, giving a distribution of values. 
 
 #### convolution.py 
@@ -62,7 +62,9 @@ Solving the Ising-model in Python using the Markov-chain Monte-Carlo (Metropolis
 Making bezier-curves in matplotlib, with interactive points that can be dragged aorund to adjust curves. 
 
 #### plasma_globe.py 
-Simulation of a plasma-globe by solving Poissions equation numerically for the electric potential in the globe.
+Simulation of a plasma-globe by solving Poissons equation numerically for the electric potential in the globe.
+Then animate the plasma-nodes in the ball, both when globe is touched and untouched. Touching the globe is 
+modelled by increasing the potential in the specific area. 
 
 #### trebuchet.py 
 Simulation of a trebuchet. Lagrangian of system is very complex, and I find the equations of motion by using 
